@@ -38,8 +38,8 @@ func main() {
 
 func printBlocks(image image.Image) {
 	imgSize := image.Bounds().Size()
-	chunkSizeX := int(imgSize.X / 60)
-	chunkSizeY := int(imgSize.Y / 60) //I want the image in the terminal to be 60x60
+	chunkSizeX := int(imgSize.X / 50)
+	chunkSizeY := int(imgSize.Y / 50) //I want the image in the terminal to be 60x60
 	colorList := []color.Color{}
 	rowColorList := []termColors.RGBColor{}
 	//--get the background color
